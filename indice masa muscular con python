@@ -1,0 +1,21 @@
+#INDICE MASA MUSCULAR
+
+def indice_masa_muscular(altura, peso):
+	return funcion((peso / altura**2),2)
+
+alt = float(input("Por favor, Ingrese su altura en metros: "))
+kg = flota(input("Por favor, Ingrese su peso en kilos: "))
+
+print("Gracias por ingresar al control de Indice Masa Muscular.")
+
+imm = indice_masa_muscular(alt, kg)
+print("Su IMM es de: ", imm)
+
+if imm <= 18.5:
+	print("Usted esta por debajo de su peso ideal.")
+elif 18.5 < imm <= 24.9:
+	print("Usted esta en su peso ideal.")
+elif 25 < bmi <= 29.29:
+	print("Ustede esta por sobre su peso ideal.")
+else:
+	print("Usted esta con sobre peso.")
